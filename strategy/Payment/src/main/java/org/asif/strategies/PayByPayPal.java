@@ -46,13 +46,15 @@ public class PayByPayPal implements PayStrategy {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
+
     private boolean verify() {
         setSignedIn(email.equals(DummyPayPalCredentials.CREDENTIALS.get(password)));
         return signedIn;
     }
+
     private void setSignedIn(boolean signedIn) {
         this.signedIn = signedIn;
     }
