@@ -10,6 +10,11 @@
     </parent>
 
     <artifactId>strategy</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>Payment</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

@@ -25,7 +25,6 @@
         <module>state</module>
         <module>proxy</module>
         <module>compound</module>
-        <module>strategy/Payment</module>
     </modules>
 
     <properties>
