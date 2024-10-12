@@ -11,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/composite/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/compound/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/compound/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/decorator/encoding-and-compression/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/decorator/encoding-and-compression/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/decorator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/decorator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/facade/src/main/java" charset="UTF-8" />

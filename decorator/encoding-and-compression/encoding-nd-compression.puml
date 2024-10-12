@@ -1,0 +1,45 @@
+@startuml
+interface DataSource {
+    +void writeData(String data)
+    +String readData()
+}
+
+class FileDataSource {
+    - String name
+    + FileDataSource(String name)
+    + void writeData(String data)
+    + String readData()
+}
+
+abstract class DataSourceDecorator {
+    - DataSource wrapper
+    + DataSourceDecorator(DataSource source)
+    + void writeData(String data)
+    + String readData()
+}
+
+class EncryptionDecorator {
+    + EncryptionDecorator(DataSource source)
+    + void writeData(String data)
+    + String readData()
+    - String encode(String data)
+    - String decode(String data)
+}
+
+class CompressionDecorator {
+    - int compLevel = 6
+    + CompressionDecorator(DataSource source)
+    + int getCompressionLevel()
+    + void setCompressionLevel(int value)
+    + void writeData(String data)
+    + String readData()
+    - String compress(String stringData)
+    - String decompress(String stringData)
+}
+
+DataSource <|.. FileDataSource
+DataSource <|.. DataSourceDecorator
+DataSourceDecorator <|-- EncryptionDecorator
+DataSourceDecorator <|-- CompressionDecorator
+DataSourceDecorator *-- DataSource
+@enduml
