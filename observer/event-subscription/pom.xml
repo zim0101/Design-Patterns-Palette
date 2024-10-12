@@ -5,15 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.asif</groupId>
-        <artifactId>design-patterns-palette</artifactId>
+        <artifactId>observer</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>observer</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>event-subscription</module>
-    </modules>
+    <artifactId>event-subscription</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

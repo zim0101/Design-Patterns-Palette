@@ -1,0 +1,34 @@
+@startuml
+interface EventListener {
+    +update(eventType: String, file: File): void
+}
+
+class EmailNotificationListener {
+    -email: String
+    +update(eventType: String, file: File): void
+}
+
+class LogOpenListener {
+    -log: File
+    +update(eventType: String, file: File): void
+}
+
+class EventManager {
+    -listeners: Map<String, List<EventListener>>
+    +subscribe(eventType: String, listener: EventListener): void
+    +unsubscribe(eventType: String, listener: EventListener): void
+    +notify(eventType: String, file: File): void
+}
+
+class Editor {
+    -file: File
+    +events: EventManager
+    +openFile(filePath: String): void
+    +saveFile(): void
+}
+
+EventManager ..> EventListener : "manages"
+Editor --> EventManager : "uses"
+EventListener <|.. EmailNotificationListener
+EventListener <|.. LogOpenListener
+@enduml
