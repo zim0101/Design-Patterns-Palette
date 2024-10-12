@@ -1,0 +1,39 @@
+@startuml
+interface Button {
+    +void render()
+    +void onClick()
+}
+
+class HtmlButton {
+    +void render()
+    +void onClick()
+}
+
+class WindowsButton {
+    - JPanel panel
+    - JFrame frame
+    - JButton button
+    +void render()
+    +void onClick()
+}
+
+Button <|.. HtmlButton
+Button <|.. WindowsButton
+
+abstract class Dialog {
+    +void renderWindow()
+    +abstract Button createButton()
+}
+
+class HtmlDialog {
+    +Button createButton()
+}
+
+class WindowsDialog {
+    +Button createButton()
+}
+
+Dialog <|-- HtmlDialog
+Dialog <|-- WindowsDialog
+Dialog o-- Button
+@enduml
