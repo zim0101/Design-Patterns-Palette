@@ -5,15 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.asif</groupId>
-        <artifactId>design-patterns-palette</artifactId>
+        <artifactId>abstract-factory</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>abstract-factory</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>cross-platform-gui-factory</module>
-    </modules>
+    <artifactId>cross-platform-gui-factory</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

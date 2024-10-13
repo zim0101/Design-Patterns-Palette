@@ -1,0 +1,51 @@
+@startuml
+interface Button {
+    +void paint()
+}
+
+class MacOSButton {
+    +void paint()
+}
+
+class WindowsButton {
+    +void paint()
+}
+
+Button <|.. MacOSButton
+Button <|.. WindowsButton
+
+interface Checkbox {
+    +void paint()
+}
+
+class MacOSCheckbox {
+    +void paint()
+}
+
+class WindowsCheckbox {
+    +void paint()
+}
+
+Checkbox <|.. MacOSCheckbox
+Checkbox <|.. WindowsCheckbox
+
+interface GUIFactory {
+    +Button createButton()
+    +Checkbox createCheckbox()
+}
+
+class MacOSFactory {
+    +Button createButton()
+    +Checkbox createCheckbox()
+}
+
+class WindowsFactory {
+    +Button createButton()
+    +Checkbox createCheckbox()
+}
+
+GUIFactory <|.. MacOSFactory
+GUIFactory <|.. WindowsFactory
+GUIFactory o-- Button
+GUIFactory o-- Checkbox
+@enduml
