@@ -9,25 +9,21 @@ body:
       label: Design Pattern Name
       description: Enter the name of the design pattern.
       placeholder: "e.g., Singleton, Factory, Observer."
-      required: true
   - type: textarea
     id: pattern_description
     attributes:
       label: Description
       description: Describe the design pattern and its purpose.
       placeholder: "Provide an overview of the pattern and why it's important."
-      required: true
   - type: textarea
     id: example_idea
     attributes:
       label: Example Idea
       description: Briefly explain the example you plan to add.
       placeholder: "What use case or implementation will the example demonstrate?"
-      required: true
   - type: textarea
     id: additional_context
     attributes:
       label: Additional Context
       description: Add any other context, references, or resources related to the design pattern.
       placeholder: "Include links, book references, or related patterns."
-      required: false
