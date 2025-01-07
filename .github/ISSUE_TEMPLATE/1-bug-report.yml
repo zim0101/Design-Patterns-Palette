@@ -9,39 +9,33 @@ body:
       label: Description
       description: Provide a clear and concise description of the bug.
       placeholder: "What is the issue? Provide details of the unexpected behavior."
-      required: true
   - type: textarea
     id: steps
     attributes:
       label: Steps to Reproduce
       description: List the steps to reproduce the issue.
       placeholder: "1. Go to...\n2. Click on...\n3. See error..."
-      required: true
   - type: textarea
     id: expected
     attributes:
       label: Expected Behavior
       description: What should happen instead of the bug?
       placeholder: "Describe the expected result."
-      required: true
   - type: textarea
     id: actual
     attributes:
       label: Actual Behavior
       description: What actually happens instead?
       placeholder: "Describe the actual result."
-      required: true
   - type: input
     id: environment
     attributes:
       label: Environment
       description: Specify the environment in which the bug occurs (e.g., OS, language version).
       placeholder: "e.g., Ubuntu 22.04, Java 21"
-      required: false
   - type: textarea
     id: additional_context
     attributes:
       label: Additional Context
       description: Add any other context about the problem, such as screenshots, logs, or relevant links.
       placeholder: "Include screenshots, logs, or additional references here."
-      required: false
