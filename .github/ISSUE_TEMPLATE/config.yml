@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: General Questions
+    url: https://github.com/asifjoardar/Design-Patterns-Palette/discussions
+    about: "For general inquiries or discussions."
