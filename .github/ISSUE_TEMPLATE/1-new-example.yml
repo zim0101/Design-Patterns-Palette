@@ -4,26 +4,44 @@ title: "[Example]: "
 labels: new example
 body:
   - type: input
+    id: example_name
+    attributes:
+      label: Example Name
+      description: Provide a descriptive name for your example.
+      placeholder: "e.g., Database Connection Manager."
+  - type: input
     id: pattern_name
     attributes:
       label: Design Pattern Name
       description: Specify the design pattern to which this example belongs.
       placeholder: "e.g., Singleton, Factory, Observer."
   - type: textarea
-    id: example_description
+    id: story_behind_problem
     attributes:
-      label: Example Description
-      description: Describe what your example does and why it is relevant.
-      placeholder: "Explain the scenario and key components of the example."
+      label: The Story Behind the Problem
+      description: Explain the problem or scenario that led to this example.
+      placeholder: "Describe the issue, its context, and why it needed a solution."
   - type: textarea
-    id: implementation_details
+    id: solution
     attributes:
-      label: Implementation Details
-      description: Provide specific implementation notes, such as edge cases or dependencies.
-      placeholder: "Explain how the example works and any important details."
+      label: Solution
+      description: Provide the solution implemented using the design pattern.
+      placeholder: "Explain how the pattern solves the problem and describe the approach."
+  - type: textarea
+    id: uml_code
+    attributes:
+      label: UML Diagram Code
+      description: Add the PlantUML code to generate the UML diagram for your example.
+      placeholder: "e.g., @startuml...@enduml"
+  - type: textarea
+    id: achievements
+    attributes:
+      label: What We Achieve
+      description: Describe the key benefits or outcomes of using this design pattern in your example.
+      placeholder: "Explain the advantages or goals accomplished with this solution."
   - type: textarea
     id: additional_context
     attributes:
       label: Additional Context
       description: Add any other context, resources, or links related to the example.
-      placeholder: "Include code snippets, external links, or references here."
+      placeholder: "Include requirements, external links, or references here."
