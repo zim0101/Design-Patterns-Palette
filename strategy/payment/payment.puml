@@ -1,0 +1,39 @@
+@startuml
+interface PayStrategy {
+    +pay(paymentAmount: int): boolean
+    +collectPaymentDetails(): void
+}
+
+class Order {
+    -totalCost: int = 0
+    -isClosed: boolean = false
+    +processOrder(strategy: PayStrategy): void
+    +setTotalCost(cost: int): void
+    +getTotalCost(): int
+    +isClosed(): boolean
+    +setClosed(): void
+}
+
+class PayByCreditCard {
+    -cardNumber: String
+    -card1Details: Map<String, Object>
+    -cardIsPresent: boolean
+    +pay(paymentAmount: int): boolean
+    +collectPaymentDetails(): void
+    -verify(): boolean
+    -setSignedIn(cardIsPresent: boolean): void
+}
+
+class PayByPayPal {
+    -email: String
+    -password: String
+    -signedIn: boolean
+    +pay(paymentAmount: int): boolean
+    +collectPaymentDetails(): void
+    -verify(): boolean
+    -setSignedIn(signedIn: boolean): void
+}
+PayStrategy <|.. PayByCreditCard
+PayStrategy <|.. PayByPayPal
+Order ..> PayStrategy : "uses"
+@enduml
