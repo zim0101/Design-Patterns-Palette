@@ -68,3 +68,14 @@ Use the Abstract Factory pattern when:
 - Builder: Can be used together when creating complex objects
 - Bridge: Can be used together when you need to vary both abstractions and implementations
 - Strategy: Abstract Factory can be used to create specific strategies
+
+## 📚 Resources to Learn More
+
+### Books
+1. "Design Patterns: Elements of Reusable Object-Oriented Software" by Gang of Four (GoF)
+
+2. "Head First Design Patterns" by Freeman & Freeman
+
+### Online Tutorials & Articles
+1. Refactoring.Guru
+   - https://refactoring.guru/design-patterns/abstract-factory
