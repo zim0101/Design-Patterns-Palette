@@ -1,0 +1,26 @@
+@startuml Adapter Pattern
+
+skinparam backgroundColor white
+skinparam roundcorner 5
+
+class Client {
+}
+
+interface Target {
+    +request()
+}
+
+class Adapter {
+    +request()
+}
+
+class Adaptee {
+    +specificRequest()
+}
+
+Client -> Target
+Target <|.. Adapter
+Adapter -> Adaptee
+note right of Adapter : "Converts Adaptee's interface\nto Target's interface"
+
+@enduml
