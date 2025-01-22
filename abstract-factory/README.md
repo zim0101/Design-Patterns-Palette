@@ -74,7 +74,7 @@ Use the Abstract Factory pattern when:
 ### Books
 1. "Design Patterns: Elements of Reusable Object-Oriented Software" by Gang of Four (GoF)
 
-2. "Head First Design Patterns" by Freeman & Freeman
+2. "Head First Design Patterns" by Eric Freeman
 
 ### Online Tutorials & Articles
 1. Refactoring.Guru
