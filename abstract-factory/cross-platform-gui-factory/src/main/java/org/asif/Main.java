@@ -6,12 +6,17 @@ import org.asif.factories.LinuxFactory;
 import org.asif.factories.MacOSFactory;
 import org.asif.factories.WindowsFactory;
 
-public class Main {
+public final class Main {
     /**
      * Application picks the factory type and creates it in run time (usually at
      * initialization stage), depending on the configuration or environment
      * variables.
      */
+
+    private Main() {
+        throw new UnsupportedOperationException("Main class cannot be instantiated");
+    }
+
     private static Application configureApplication() {
         Application app;
         GUIFactory factory;
