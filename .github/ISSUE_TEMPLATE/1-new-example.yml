@@ -16,32 +16,9 @@ body:
       description: Specify the design pattern to which this example belongs.
       placeholder: "e.g., Singleton, Factory, Observer."
   - type: textarea
-    id: story_behind_problem
+    id: proposal
     attributes:
-      label: The Story Behind the Problem
-      description: Explain the problem or scenario that led to this example.
-      placeholder: "Describe the issue, its context, and why it needed a solution."
-  - type: textarea
-    id: solution
-    attributes:
-      label: Solution
-      description: Provide the solution implemented using the design pattern.
-      placeholder: "Explain how the pattern solves the problem and describe the approach."
-  - type: textarea
-    id: uml_code
-    attributes:
-      label: UML Diagram Code
-      description: Add the PlantUML code to generate the UML diagram for your example.
-      placeholder: "e.g., @startuml...@enduml"
-  - type: textarea
-    id: achievements
-    attributes:
-      label: What We Achieve
-      description: Describe the key benefits or outcomes of using this design pattern in your example.
-      placeholder: "Explain the advantages or goals accomplished with this solution."
-  - type: textarea
-    id: additional_context
-    attributes:
-      label: Additional Context
-      description: Add any other context, resources, or links related to the example.
-      placeholder: "Include requirements, external links, or references here."
+      label: Example Description
+      description: Provide a detailed description of your example, including its purpose and how it aligns with the design pattern.
+      placeholder: "Describe your example, its purpose, and how it implements the design pattern."
+      
